@@ -1,0 +1,178 @@
+@media (min-width: 42rem) {
+   
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    min-width: 120rem;
+    
+}
+
+.logo-box{
+    padding: 3rem 0;
+}
+
+.top-logo{
+    width: 32rem;
+    height: 6rem;
+}
+
+.hero-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-imagebox{
+order: 2;
+}
+
+.hero-text{
+    order: 1;
+    width: 63.7rem;
+    padding: 6rem 9rem;
+
+}
+
+.hero-title{
+    font-size: 3.8rem;
+
+}
+
+.hero-subtitle{
+    font-size: 1.8rem;
+
+}
+
+.cta-button{
+    font-size: 1.8rem;
+}
+
+
+.hero-bottombox{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    
+}
+
+/* HOW IT WORKS - SECTION */
+
+.howitworks-grid {
+    display: flex;
+    gap: 3rem;
+    overflow-x: none;
+    padding-bottom: 2rem;
+   justify-content: space-between;
+   width: 90rem;
+   margin: 0 auto;
+}
+
+.howitworks-card {
+    width: 28rem;
+    height: 29rem;
+}
+/* WHO THIS IS FOR - SECTION */
+
+.whothisisfor-content {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: center;
+    width: 90rem;
+    margin: 0 auto;
+}
+
+.whothisisfor-imagebox {
+    width: 90rem;
+    height: auto;
+}
+
+.whothisisfor-list {
+    width: 40rem;
+}
+
+.whothisisfor-subtitle {
+    font-size: 1.8rem;
+}
+
+/* CHOOSE A SYSTEM - SECTION */
+
+.choosesystem-grid {
+    display: flex;
+    flex-direction: row;
+    border-radius: 14px;
+    overflow: hidden;
+    width: 90rem;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.choosesystem-card1, .choosesystem-card2 {
+    width: 45rem;
+}
+
+.choosesystem-title {
+    width: 100%;
+
+}
+
+.choosesystem-heading {
+    font-size: 2.2rem;
+}
+
+.testimonial-container{
+    display: flex;
+    flex-direction: row;
+     gap: 2rem;
+
+}
+
+/* FOOTER-SECTION */
+
+.footer-title {
+    font-size: 3.8rem;
+
+}
+
+.footer-subtitle {
+    font-size: 1.8rem;
+    width: 63.7rem;
+   margin: 0 auto;
+
+}
+
+.footer-check {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.footer-feature-text {
+    font-size: 1.4rem;
+
+}
+
+.footer-content {
+    max-width: 81rem;
+    margin: 0 auto;
+}
+
+.footer-cta {
+   width: 33.9rem;
+   padding: 1.5rem 0;
+   font-size: 2rem;
+   margin: 1.5rem;
+}
+
+.form-container {
+    width: 120rem;
+
+}
+
+.form-content {
+    padding: 5rem 6rem;
+    width: 90rem;
+}
+
+
+}

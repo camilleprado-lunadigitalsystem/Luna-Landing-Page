@@ -1,0 +1,530 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* HERO - SECTION */
+
+
+.container{
+    max-width: 42.8rem;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.logo-box{
+    padding: 1.5rem 0;
+}
+
+.top-logo{
+    display: block;
+    margin: 0 auto;
+    width: 17.8rem;
+    height: 3.308rem;
+}
+
+.hero-image{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-section{
+    background-color: #151345;
+}
+
+.hero-box{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.hero-text{
+    color: #fff;
+    /* width: 42.8rem; */
+    padding: 4.5rem 3rem;
+}
+
+.hero-title{
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+    line-height: 1.235;
+    letter-spacing: 1.4px;
+}
+
+.hero-text span{
+    color: #FFBA26;
+    font-weight: 900;
+}
+
+.hero-subtitle{
+    font-size: 1.4rem;
+    font-weight: 200;
+    margin-bottom: 2.5rem;
+    line-height: 1.4;
+}
+
+.cta-button{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: #fff;
+    color: #002147;
+    font-size: 1.5rem;
+    letter-spacing: .75px;
+    font-weight: 700;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.hero-bottombox{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    
+}
+
+.hero-bottom{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.check{
+    width: 1rem;
+    height: 1rem;
+}
+
+/* HOW IT WORKS - SECTION */
+
+
+.howitworks-section {
+   padding: 0rem 3rem;
+
+}
+
+.howitworks-title {
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: #151345;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.howitworks-title span {
+    font-weight: 900;
+}
+
+.howitworks-grid {
+    display: flex;
+    gap: 1.4rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 2rem;
+}
+
+.howitworks-card {
+    border-radius: 14px;
+    padding: 1.6rem 1.6rem 1.8rem;
+    color: #ffffff;
+    background-color: #151345;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    width: 28rem;
+    height: 27rem;
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    justify-content: center;
+}
+
+.howitworks-icon {
+    width: 6.7rem;
+    height: 6.7rem;
+}
+
+.howitworks-subtitle{
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+}
+
+.howitworks-text {
+    font-size: 1.11rem;
+    font-weight: 200;
+}
+
+.howitworks-grid::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* WHO THIS IS FOR - SECTION */
+
+.whothisisfor-section {
+    padding: 2rem 3rem;
+    background-color: #fff;
+}
+
+.whothisisfor-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* .whothisisfor-imagebox {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+} */
+
+.whothisisfor-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.whothisisfor-title {
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: #26236B;
+    margin-bottom: 1rem;
+    letter-spacing: 1.25px;
+}
+
+.whothisisfor-title span {
+    font-weight: 900;
+}
+
+.whothisisfor-subtitle {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #000 ;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.whothisisfor-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.whothisisfor-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.whothisisfor-icon {
+    width: 3.9rem;
+    height: 3.9rem;
+}
+
+.whothisisfor-label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #151345;
+    letter-spacing: 0.5px;
+}
+
+
+/* CHOOSE A SYSTEM - SECTION */
+
+.choosesystem-section {
+    padding: 2rem 3rem;
+    background-color: #fff;
+}
+
+.choosesystem-title {
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: #26236B;
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: 1.25px;
+    line-height: 1.4;
+    width: 28.6rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+
+.choosesystem-title span {
+    font-weight: 900;
+}
+
+.choosesystem-grid {
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.choosesystem-card1 {
+    background-color: #26236B;
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+.choosesystem-card1 h3 , .choosesystem-card2 h3{
+    padding: 1.5rem;
+    padding-top: 2rem;
+}
+
+.divider {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ 
+ 
+}
+
+.choosesystem-card2 {
+    background-color: #151345;
+    color: #fff;
+}
+
+hr{
+    border: none;
+    border-top: 2px solid #fff;
+    margin: 1rem 0;
+}
+
+.cardspacer{
+    padding: 2rem;
+}
+.choosesystem-heading {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.8px;
+    text-align: center;
+}
+
+.choosesystem-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.choosesystem-feature {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.choosesystem-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    flex-shrink: 0;
+}
+
+.choosesystem-feature strong {
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: block;
+    color: #fff;
+}
+
+.choosesystem-description {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #fff;
+}
+
+/* testimonial-section */
+
+.section-testimonial{
+    padding: 0 3rem;
+    /* background-color: #ffffff; */
+}
+
+.testimonial-header{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 200;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+    color: #151345;
+    letter-spacing: 1.25px;
+}
+
+.testimonial-header span{
+    font-weight: 900;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.testimonial-container{
+    display: flex;
+    flex-direction: column;
+     gap: 2rem;
+
+}
+
+.testimonial-card{
+     background-color: hsla(216, 17%, 72%, 0.164);  
+    width: 37rem;
+    height: 26.7rem;
+    min-height: 25.8rem;
+    text-align: center;
+    border-radius: 20px;
+    padding: 0rem 2rem 2rem 2rem;
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.quote{
+    font-size: 15rem;
+    font-family: 'Playfair Display', serif;
+    color: #15134510;
+    position: absolute;
+    left: 120px;
+    top: -45px;
+    transform: translateX(50%);
+
+}
+
+.testimonial-text{
+    font-size: 1.5rem;
+    line-height: 1.79;
+    margin: 0 auto;
+    max-width: 31rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    padding-top: 8rem;
+}
+.testimonial-name{
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-weight: 700;
+      color: #151345;
+}
+
+.testimonial-title{
+    font-size: 1.3rem;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #151345;
+    padding: 4rem 3rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.footer-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    letter-spacing: 1.4px;
+}
+
+.footer-title span {
+    color: #FFBA26;
+}
+
+.footer-subtitle {
+    font-size: 1.4rem;
+    color: #ffffff;
+    line-height: 1.4;
+    margin-bottom: 2.5rem;
+    letter-spacing: .75px;
+    font-weight: 200;
+}
+
+.footer-subtitle strong {
+    font-weight: 700;
+}
+
+.footer-cta {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #151345;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: .5rem 4rem;
+    /* border-radius: 8px; */
+    text-decoration: none;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* .footer-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 186, 38, 0.3);
+} */
+
+.footer-features {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+    flex-wrap: wrap;
+
+}
+
+.footer-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.footer-check {
+    width: 1rem;
+    height: 1rem;
+}
+
+.footer-feature-text {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
