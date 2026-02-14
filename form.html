@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./form.css">
+    
+    <title>Luna Digital - Client Conversion System</title>
+</head>
+<body>
+    <div class="form-container">
+        <header class="form-header">
+           <a href="./index.html"><img class="form-logo" src="./Mobile Assets - Home/logo.png" alt="Luna Digital Logo" width="969" height="182" loading="eager"/></a>
+        </header>
+        
+        <div class="form-content">
+            <h1 class="form-title">LAUNCH YOUR <span class="highlight">CLIENT CONVERSION SYSTEM</span></h1>
+            
+            <p class="form-subtitle">Fill out the form below so we can understand your business and schedule your discovery chat. This helps us prepare the right setup and suggestions for you.</p>
+            
+            <form class="contact-form" name="client-conversion-form" method="POST" action="/confirmation.html" data-netlify="true" netlify-honeypot="bot-field">
+                <!-- Hidden field for Netlify -->
+                <input type="hidden" name="form-name" value="client-conversion-form" />
+                
+                <!-- Honeypot field for spam protection (hidden from users) -->
+                <p style="display: none;">
+                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                </p>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="phone-label" for="phone">Mobile phone number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+63" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="facebook" name="facebook" placeholder="Facebook Account Link">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="business" name="business" placeholder="Nature of Business" required>
+                    </div>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label class="datetime-label" for="schedule">Preferred Schedule for Discovery chat</label>
+                    <input type="datetime-local" id="schedule" name="schedule" required>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label class="message-label" for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Type Here" rows="6"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">Send My Request</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

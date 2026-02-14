@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #E8E8E3;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+}
+
+.form-container {
+    max-width: 82rem;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.form-header {
+    background-color: #151345;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.form-logo {
+    max-width: 25rem;
+    height: auto;
+}
+
+/* Form Content */
+.form-content {
+    padding: 4rem 6rem 5rem 6rem;
+}
+
+.form-title {
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.form-title .highlight {
+    color: #FFBA26;
+    font-weight: 700;
+}
+
+.form-subtitle {
+    font-size: 1.4rem;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    max-width: 55rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group.full-width {
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 1.3rem;
+    color: #333333;
+    font-weight: 500;
+}
+
+.phone-label,
+.datetime-label,
+.message-label {
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1.4rem 1.5rem;
+    font-size: 1.4rem;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #D1D1D1;
+    border-radius: 6px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #151345;
+    box-shadow: 0 0 0 2px rgba(21, 19, 69, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999999;
+}
+
+/* Date/Time Input Styling */
+input[type="datetime-local"] {
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+    min-height: 12rem;
+}
+
+/* Submit Button */
+.submit-button {
+    background-color: #151345;
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.8rem 4rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 2rem auto 0;
+    display: block;
+    width: fit-content;
+}
+
+.submit-button:hover {
+    background-color: #1f1d5a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(21, 19, 69, 0.3);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    html {
+        font-size: 56%;
+    }
+    
+    body {
+        padding: 2rem 1rem;
+    }
+    
+    .form-container {
+        border-width: 3px;
+    }
+    
+    .form-content {
+        padding: 3rem 2rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .form-title {
+        font-size: 2rem;
+        line-height: 1.4;
+        margin-bottom: 2rem;
+    }
+    
+    .form-subtitle {
+        font-size: 1.3rem;
+        line-height: 1.7;
+        margin-bottom: 2.5rem;
+    }
+    
+    .form-logo {
+        max-width: 18rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+    
+    .form-content {
+        padding: 2.5rem 1.5rem;
+    }
+    
+    .form-title {
+        font-size: 1.8rem;
+        line-height: 1.4;
+        word-break: break-word;
+    }
+    
+    .form-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .submit-button {
+        width: 100%;
+        padding: 1.8rem 2rem;
+    }
+}
