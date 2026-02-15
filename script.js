@@ -4,10 +4,25 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (form) {
         form.addEventListener('submit', function(e) {
-            // Let Netlify handle the submission, then redirect
-            setTimeout(function() {
-                window.location.href = './confirmation.html';
-            }, 500);
+            e.preventDefault(); // Prevent default submission
+            
+            // Get form data
+            const formData = new FormData(form);
+            
+            // Submit to Netlify using fetch
+            fetch('/', {
+                method: 'POST',
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString()
+            })
+            .then(() => {
+                // Redirect to confirmation page on success
+                window.location.href = 'confirmation.html';
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('There was an error submitting the form. Please try again.');
+            });
         });
     }
 });

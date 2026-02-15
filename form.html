@@ -24,7 +24,12 @@
             
             <p class="form-subtitle">Fill out the form below so we can understand your business and schedule your discovery chat. This helps us prepare the right setup and suggestions for you.</p>
             
-            <form class="contact-form" name="client-conversion-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <form class="contact-form"
+      name="client-conversion-form"
+      method="POST"
+      data-netlify="true"
+      action="/confirmation.html"
+      netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="client-conversion-form" />
                 
                 <!-- Honeypot field for spam protection -->
