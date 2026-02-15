@@ -1,0 +1,5 @@
+# Netlify Redirects
+
+# This file should be placed in the root of your published directory
+
+# No redirects needed - forms will use the action attribute
