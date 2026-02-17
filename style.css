@@ -26,15 +26,15 @@ body{
 }
 
 .logo-box{
-    padding: 1.5rem 0;
+    padding: 3rem 0;
     margin: 0 auto;
 }
 
 .top-logo{
     display: block;
     margin: 0 auto;
-    width: 17.8rem;
-    height: 3.308rem;
+    max-width: 25rem;
+    height: auto;
 }
 
 .hero-image{

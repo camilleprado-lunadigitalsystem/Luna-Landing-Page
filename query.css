@@ -18,8 +18,8 @@ html{
 
 
 .top-logo{
-    width: 32rem;
-    height: 4.5rem;
+   max-width: 25rem;
+    height: auto;
 }
 
 /* HERO SECTION */
